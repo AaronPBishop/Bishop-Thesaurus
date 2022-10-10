@@ -5,11 +5,14 @@ import SearchResults from './components/SearchResults/index.js';
 function App() {
   return (
     <div>
-    <Home />
+      <Home />
+      
       <Switch>
+
         <Route path={`/:word`}>
           <SearchResults />
         </Route>
+
       </Switch>
     </div>
   );
