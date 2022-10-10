@@ -1,4 +1,8 @@
 body {
     font-family: 'Saira', sans-serif;
-    background-color: rgb(245, 248, 255);
+    background-color: rgb(245, 247, 255);
+
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 700px;
 }

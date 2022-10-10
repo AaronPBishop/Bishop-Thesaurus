@@ -1,0 +1,42 @@
+h1 {
+    border-bottom: 2px solid black;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 24px;
+}
+
+#header-icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 55px;
+    object-fit: contain;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    font-family: 'Saira', sans-serif;
+    position: relative;
+    bottom: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+
+#make-search {
+    background-image: url('../../search_FILL0_wght200_GRAD0_opsz24.png');
+    background-color: rgb(212, 226, 249);
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+}

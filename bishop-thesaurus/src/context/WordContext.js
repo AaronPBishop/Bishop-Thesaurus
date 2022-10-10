@@ -5,10 +5,10 @@ export const CreateWordContext = createContext();
 export const useWordContext = () => useContext(CreateWordContext);
 
 export default function WordContextProvider({ children }) {
-    const [word, setWord] = useState('');
+    const [wordContext, setWordContext] = useState('');
 
     return (
-        <CreateWordContext.Provider value={{ word, setWord }}>
+        <CreateWordContext.Provider value={{ wordContext, setWordContext }}>
             {children}
         </CreateWordContext.Provider>
     );

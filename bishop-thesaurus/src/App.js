@@ -1,6 +1,11 @@
+import { Switch, Route } from 'react-router-dom';
+import Home from './components/Home/index.js';
+
 function App() {
   return (
-    <h1></h1>
+    <>
+      <Home />
+    </>
   );
 }
 
