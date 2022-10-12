@@ -1,0 +1,40 @@
+#synonym-results {
+    display: flex;
+    justify-content: center;
+    
+    box-sizing: content-box;
+    flex-wrap: wrap;
+
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#expand-synonyms {
+    background-color: rgb(212, 226, 249);
+    background-position: center;
+
+    min-width: 30px;
+    max-width: 30px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+    margin-left: 10px;
+
+    position: relative;
+    top: 5px;
+}
+
+.synonym-li {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+    line-height: 20px;
+    
+    box-sizing: content-box;
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    width: 100%;
+}

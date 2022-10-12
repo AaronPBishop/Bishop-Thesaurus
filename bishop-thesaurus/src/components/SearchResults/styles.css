@@ -2,14 +2,27 @@
     display: flex;
     justify-content: center;
 
+    flex-wrap: wrap;
+
     position: relative;
     top: 35px;
 
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 8px;
     background-color: white;
 
     margin: auto;
-    min-width: 30%;
-    max-width: 30%;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+#display-word {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    #results-area {
+        min-width: 80%;
+        max-width: 80%;
+    }
 }

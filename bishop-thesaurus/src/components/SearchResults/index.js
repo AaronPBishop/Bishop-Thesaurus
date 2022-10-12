@@ -31,9 +31,9 @@ const SearchResults = () => {
                 <Definitions definitionsData={data}/>
             </div>
 
-            {/* <div id='synonym-results'>
+            <div id='synonym-results'>
                 <Synonyms synonymsData={data} />
-            </div> */}
+            </div>
 
             {/* <div id='antonym-results'>
                 <Antonyms antonymsData={data}/>

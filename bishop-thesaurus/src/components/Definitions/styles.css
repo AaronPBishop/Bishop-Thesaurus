@@ -1,3 +1,40 @@
+#definition-results {
+    display: flex;
+    justify-content: center;
+    
+    box-sizing: content-box;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin: 10px;
+}
+
+#expand-definitions {
+    background-color: rgb(212, 226, 249);
+    background-position: center;
+
+    min-width: 30px;
+    max-width: 30px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+    margin-left: 10px;
+
+    position: relative;
+    top: 5px;
+}
+
 .definition-li {
+    display: flex;
+    justify-content: flex-start;
+
     list-style: none;
+    line-height: 20px;
+    
+    box-sizing: content-box;
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    width: 100%;
 }
