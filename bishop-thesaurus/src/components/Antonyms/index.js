@@ -24,16 +24,22 @@ const Antonyms = ({ antonymsData }) => {
 
             Antonyms: {antonymResults.length}
 
-            <button 
-            id='expand-antonyms' 
-            style={{backgroundImage: imgArr[srcIndex]}} 
-            onClick={() => {
-                setClicked((isClicked) => !isClicked)
-                setSrcIndex(srcIndex + 1)}}>
-            </button>
+            {
+                antonymResults.length > 0 && 
 
-            {clicked && 
-            showResults}
+                <button 
+                id='expand-antonyms' 
+                style={{backgroundImage: imgArr[srcIndex]}} 
+                onClick={() => {
+                    setClicked((isClicked) => !isClicked)
+                    setSrcIndex(srcIndex + 1)}}>
+                </button>
+            }
+
+            {
+                clicked && 
+                showResults
+            }
 
         </div>
     );

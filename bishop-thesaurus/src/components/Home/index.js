@@ -41,8 +41,10 @@ const Home = () => {
                 <h1>Bishop Thesaurus</h1>
             </div>
 
-            {errors.length > 0 &&
-            errMsg}
+            {
+                errors.length > 0 &&
+                errMsg
+            }
 
             <form id='search-form' onSubmit={handleSubmit}>
 

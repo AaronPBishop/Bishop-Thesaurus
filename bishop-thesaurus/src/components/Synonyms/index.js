@@ -24,16 +24,22 @@ const Synonyms = ({ synonymsData }) => {
 
             Synonyms: {synonymResults.length}
 
-            <button 
-            id='expand-synonyms' 
-            style={{backgroundImage: imgArr[srcIndex]}} 
-            onClick={() => {
-                setClicked((isClicked) => !isClicked)
-                setSrcIndex(srcIndex + 1)}}>
-            </button>
+            {
+                synonymResults.length > 0 &&
+                
+                <button 
+                id='expand-synonyms' 
+                style={{backgroundImage: imgArr[srcIndex]}} 
+                onClick={() => {
+                    setClicked((isClicked) => !isClicked)
+                    setSrcIndex(srcIndex + 1)}}>
+                </button>
+            }
 
-            {clicked && 
-            showResults}
+            {
+                clicked && 
+                showResults
+            }
 
         </div>
     );

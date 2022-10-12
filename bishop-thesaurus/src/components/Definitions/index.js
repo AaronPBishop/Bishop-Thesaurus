@@ -24,16 +24,22 @@ const Definitions = ({ definitionsData }) => {
 
             Definitions: {definitionResults.length}
 
-            <button 
-            id='expand-definitions' 
-            style={{backgroundImage: imgArr[srcIndex]}} 
-            onClick={() => {
-                setClicked((isClicked) => !isClicked)
-                setSrcIndex(srcIndex + 1)}}>
-            </button>
+            {
+                definitionResults.length > 0 &&
+                
+                 <button 
+                 id='expand-definitions' 
+                 style={{backgroundImage: imgArr[srcIndex]}} 
+                 onClick={() => {
+                     setClicked((isClicked) => !isClicked)
+                     setSrcIndex(srcIndex + 1)}}>
+                 </button>
+            }
 
-            {clicked && 
-            showResults}
+            {
+                clicked && 
+                showResults
+            }
 
         </div>
     );
