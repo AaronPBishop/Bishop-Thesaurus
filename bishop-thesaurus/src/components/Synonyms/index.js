@@ -17,8 +17,6 @@ const Synonyms = ({ synonymsData }) => {
     const synonymResults = [];
     if (synonymsData.length) synonymResults.push(...synonymsData[0].meanings[0].synonyms);
 
-    console.log(synonymsData)
-
     const showResults = synonymResults.map((synonym, i) => <li className='synonym-li' key={i}>- {synonym}</li>);
 
     return (
