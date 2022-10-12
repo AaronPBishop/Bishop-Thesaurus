@@ -1,4 +1,15 @@
 #results-area {
     display: flex;
     justify-content: center;
+
+    position: relative;
+    top: 35px;
+
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+
+    margin: auto;
+    min-width: 30%;
+    max-width: 30%;
 }

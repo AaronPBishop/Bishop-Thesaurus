@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useWordContext } from "../../context/WordContext";
 
 import './styles.css';
@@ -19,16 +19,25 @@ const SearchResults = () => {
         };
 
         makeSearch();
-    }, [data]);
-
-    console.log(data)
+    }, [wordContext]);
 
     return (
         <div id='results-area'>
-            Word: {wordContext}
-            <Definitions definitionsData={data[0].meanings[0].definitions} />
-            <Synonyms synonymsData={data[0].meanings[0].synonyms} />
-            <Antonyms antonymsData={data[0].meanings[0].antonyms} />
+            <div id='display-word'>
+                Word: {wordContext}
+            </div>
+            
+            <div id='definition-results'>
+                <Definitions definitionsData={data}/>
+            </div>
+
+            {/* <div id='synonym-results'>
+                <Synonyms synonymsData={data} />
+            </div> */}
+
+            {/* <div id='antonym-results'>
+                <Antonyms antonymsData={data}/>
+            </div> */}
         </div>
     );
 };
