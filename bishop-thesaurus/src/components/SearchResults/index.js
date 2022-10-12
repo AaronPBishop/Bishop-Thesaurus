@@ -35,9 +35,9 @@ const SearchResults = () => {
                 <Synonyms synonymsData={data} />
             </div>
 
-            {/* <div id='antonym-results'>
+            <div id='antonym-results'>
                 <Antonyms antonymsData={data}/>
-            </div> */}
+            </div>
         </div>
     );
 };
