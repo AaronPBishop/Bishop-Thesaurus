@@ -1,10 +1,13 @@
 h1 {
+    position: relative;
+    bottom: 10px;
     border-bottom: 2px solid black;
 }
 
 #home {
     display: flex;
     justify-content: center;
+
     position: relative;
     right: 24px;
 }
@@ -14,6 +17,7 @@ h1 {
     justify-content: center;
     position: relative;
     right: 35px;
+    bottom: 8px;
     object-fit: contain;
 }
 
@@ -25,7 +29,7 @@ h1 {
 #search-bar {
     font-family: 'Saira', sans-serif;
     position: relative;
-    bottom: 6px;
+    bottom: 15px;
     border: 1px solid black;
     border-radius: 3px;
     margin-right: 3px;
@@ -39,6 +43,9 @@ h1 {
     height: 25px;
     border: 1px solid black;
     border-radius: 3px;
+
+    position: relative;
+    bottom: 9px;
 }
 
 #err-msg {

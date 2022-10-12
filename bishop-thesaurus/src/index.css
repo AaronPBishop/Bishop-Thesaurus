@@ -1,8 +1,19 @@
+html {
+    /* background: linear-gradient(rgb(0, 10, 50), rgb(0, 10, 20)) no-repeat center center fixed; */
+    /* background-image: url('./Rainbow-Vector.jpg'); */
+    background: linear-gradient(rgb(0, 10, 60), rgb(0, 10, 20));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 body {
     font-family: 'Saira', sans-serif;
     background-color: rgb(245, 247, 255);
-
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    height: 700px;
+    
+    border: 1px solid black;
+    border-radius: 8px;
+    min-height: 700px;
+    max-height: fit-content;
 }

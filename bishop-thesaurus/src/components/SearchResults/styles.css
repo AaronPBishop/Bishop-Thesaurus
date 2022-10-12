@@ -5,13 +5,14 @@
     flex-wrap: wrap;
 
     position: relative;
-    top: 35px;
+    top: 0px;
 
     border: 1px solid black;
     border-radius: 8px;
     background-color: white;
 
     margin: auto;
+    margin-bottom: 10px;
     min-width: 40%;
     max-width: 50%;
 }
