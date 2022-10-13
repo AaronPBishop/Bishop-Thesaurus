@@ -25,7 +25,7 @@ const Synonyms = ({ synonymsData }) => {
             Synonyms: {synonymResults.length}
 
             {
-                synonymResults.length > 0 &&
+                synonymResults.length > 1 ?
                 
                 <button 
                 id='expand-synonyms' 
@@ -33,7 +33,8 @@ const Synonyms = ({ synonymsData }) => {
                 onClick={() => {
                     setClicked((isClicked) => !isClicked)
                     setSrcIndex(srcIndex + 1)}}>
-                </button>
+                </button> :
+                showResults   
             }
 
             {

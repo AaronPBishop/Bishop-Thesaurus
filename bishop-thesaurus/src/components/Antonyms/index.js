@@ -25,15 +25,15 @@ const Antonyms = ({ antonymsData }) => {
             Antonyms: {antonymResults.length}
 
             {
-                antonymResults.length > 0 && 
-
+                antonymResults.length > 1 ? 
                 <button 
                 id='expand-antonyms' 
                 style={{backgroundImage: imgArr[srcIndex]}} 
                 onClick={() => {
                     setClicked((isClicked) => !isClicked)
                     setSrcIndex(srcIndex + 1)}}>
-                </button>
+                </button> :
+                showResults
             }
 
             {

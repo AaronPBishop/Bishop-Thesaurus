@@ -25,7 +25,7 @@ const Definitions = ({ definitionsData }) => {
             Definitions: {definitionResults.length}
 
             {
-                definitionResults.length > 0 &&
+                definitionResults.length > 1 ?
                 
                  <button 
                  id='expand-definitions' 
@@ -33,7 +33,8 @@ const Definitions = ({ definitionsData }) => {
                  onClick={() => {
                      setClicked((isClicked) => !isClicked)
                      setSrcIndex(srcIndex + 1)}}>
-                 </button>
+                 </button> :
+                 showResults
             }
 
             {
