@@ -11,10 +11,14 @@
     border-radius: 8px;
     background-color: white;
 
+    overflow-y: auto;
+
     margin: auto;
     margin-bottom: 10px;
     min-width: 40%;
-    max-width: 50%;
+    max-width: 40%;
+
+    max-height: 75vh;
 }
 
 #display-word {
