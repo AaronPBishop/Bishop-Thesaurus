@@ -4,7 +4,7 @@ import SearchResults from './components/SearchResults/index.js';
 
 function App() {
   return (
-    <div>
+    <div id='main-content'>
       <Home />
       
       <Switch>
