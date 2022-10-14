@@ -11,6 +11,7 @@ const imgArr = [`url(${expandMore})`, `url(${expandLess})`];
 const Anagrams = () => {
     const { wordContext, setWordContext } = useWordContext();
 
+    const [isLoaded, setIsLoaded] = useState(false);
     const [currAnagrams, setCurrAnagrams] = useState([]);
     const [validAnagrams, setValidAnagrams] = useState([]);
     const [clicked, setClicked] = useState(false);
@@ -98,6 +99,7 @@ const Anagrams = () => {
         if (wordContext.length < 6) {
             permutations(wordContext);
             setCurrAnagrams(myAnagrams);
+            setIsLoaded((isLoaded) => !isLoaded);
         };
     }, [wordContext]);
 
@@ -116,7 +118,7 @@ const Anagrams = () => {
 
         fetchAnagrams();
         setValidAnagrams(finalAnagrams);
-    }, [wordContext]);
+    }, [isLoaded]);
 
     useEffect(() => {
         if (srcIndex === 2) setSrcIndex(0);
@@ -127,11 +129,11 @@ const Anagrams = () => {
         setSrcIndex(0);
     }, [wordContext]);
 
-    let showResults = validAnagrams.sort().map((anagram, i) => <Link 
-    to={`/${anagram}`} 
-    className='anagram-li' 
-    key={i}
-    onClick={() => setWordContext(anagram)}>{anagram}</Link>);
+    const showResults = validAnagrams.sort().map((anagram, i) => <Link 
+        to={`/${anagram}`} 
+        className='anagram-li' 
+        key={i}
+        onClick={() => setWordContext(anagram)}>{anagram}</Link>);
     
     return (
         <div>
