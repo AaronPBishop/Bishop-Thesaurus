@@ -9,6 +9,10 @@ function App() {
       
       <Switch>
 
+      <Route path={`/error`}>
+          <p id='invalid'>No results found. Check your spelling and try again!</p>
+        </Route>
+
         <Route path={`/:word`}>
           <SearchResults />
         </Route>

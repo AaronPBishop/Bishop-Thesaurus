@@ -20,7 +20,6 @@ const Home = () => {
         for (let letter of input) {if (!letter.match(/[A-Za-z]/)) errorsArr.push('You entered an invalid character. Please check your spelling.')};
 
         setErrors(errorsArr);
-
     }, [word]);
 
     const handleSubmit = e => {

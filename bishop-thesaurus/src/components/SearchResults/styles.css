@@ -14,16 +14,11 @@
     overflow-y: auto;
 
     margin: auto;
-    margin-bottom: 10px;
+    padding-top: 20px;
     min-width: 40%;
     max-width: 40%;
 
     max-height: 75vh;
-}
-
-#display-word {
-    position: relative;
-    top: 5px;
 }
 
 ::-webkit-scrollbar {

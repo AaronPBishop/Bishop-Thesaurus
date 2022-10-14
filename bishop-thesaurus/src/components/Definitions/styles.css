@@ -25,6 +25,24 @@
     top: 6px;
 }
 
+.single-definition {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+    line-height: 20px;
+    
+    box-sizing: content-box;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    margin: auto;
+
+    padding-top: 20px;
+    width: 100%;
+}
+
 .definition-li {
     display: flex;
     justify-content: flex-start;

@@ -1,0 +1,49 @@
+#anagram-results {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 8px;
+    
+    box-sizing: content-box;
+    flex-wrap: wrap;
+
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#expand-anagrams {
+    background-color: rgb(212, 226, 249);
+    background-position: center;
+
+    min-width: 30px;
+    max-width: 30px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+    margin-left: 15px;
+
+    position: relative;
+    top: 23px;
+}
+
+.anagram-li {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 15px;
+
+    margin: 10px;
+}
+
+#no-anagrams {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
