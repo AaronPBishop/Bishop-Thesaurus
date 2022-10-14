@@ -12,6 +12,7 @@ const Anagrams = () => {
     const { wordContext, setWordContext } = useWordContext();
 
     const [currAnagrams, setCurrAnagrams] = useState([]);
+    const [validAnagrams, setValidAnagrams] = useState([]);
     const [clicked, setClicked] = useState(false);
     const [srcIndex, setSrcIndex] = useState(0);
 
@@ -101,6 +102,23 @@ const Anagrams = () => {
     }, [wordContext]);
 
     useEffect(() => {
+        const finalAnagrams = [];
+        
+        const fetchAnagrams = async () => {
+            for (let i = 0; i < currAnagrams.length; i++) {
+                const fetchRequest = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${currAnagrams[i]}`);
+
+                const fetchJSON = await fetchRequest.json();
+
+                if (!fetchJSON.title) finalAnagrams.push(fetchJSON[0].word)
+            };
+        };
+
+        fetchAnagrams();
+        setValidAnagrams(finalAnagrams);
+    }, [wordContext]);
+
+    useEffect(() => {
         if (srcIndex === 2) setSrcIndex(0);
     }, [srcIndex]);
 
@@ -109,12 +127,12 @@ const Anagrams = () => {
         setSrcIndex(0);
     }, [wordContext]);
 
-    const showResults = currAnagrams.sort().map((anagram, i) => <Link 
+    let showResults = validAnagrams.sort().map((anagram, i) => <Link 
     to={`/${anagram}`} 
     className='anagram-li' 
     key={i}
     onClick={() => setWordContext(anagram)}>{anagram}</Link>);
-
+    
     return (
         <div>
 
