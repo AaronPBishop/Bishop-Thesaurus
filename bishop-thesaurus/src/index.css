@@ -17,6 +17,10 @@ body {
     overflow-y: hidden;
 }
 
+.header {
+    font-weight: bold;
+}
+
 #invalid {
     display: flex;
     justify-content: center;

@@ -35,7 +35,7 @@ const Definitions = ({ definitionsData }) => {
     return (
         <div id='definition-results'>
 
-            Definitions: {definitionResults.length}
+            <p className='header'>Definitions: {definitionResults.length}</p>
 
             {
                 definitionResults.length > 1 ?

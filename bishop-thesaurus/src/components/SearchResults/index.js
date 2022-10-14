@@ -32,7 +32,7 @@ const SearchResults = () => {
     return (
         <div id='results-area'>
             <div id='display-word'>
-                Word: {wordContext}
+                <p className='header' style={{position: 'relative', top: '10px'}}>Word: {wordContext}</p>
             </div>
             
             <div id='definition-results'>

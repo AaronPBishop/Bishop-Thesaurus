@@ -121,7 +121,7 @@ const Anagrams = () => {
             {
                 wordContext.length < 6 ?
                 <div id='anagram-results'>
-                    <p>Anagrams:</p>
+                    <p className='header'>Anagrams:</p>
                     <button 
                     id='expand-anagrams' 
                     style={{backgroundImage: imgArr[srcIndex]}} 

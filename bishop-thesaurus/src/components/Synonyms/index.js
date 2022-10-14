@@ -30,7 +30,7 @@ const Synonyms = ({ synonymsData }) => {
     return (
         <div id='synonym-results'>
 
-            Synonyms: {synonymResults.length}
+            <p className='header'>Synonyms: {synonymResults.length}</p>
 
             {
                 synonymResults.length > 1 ?

@@ -30,7 +30,7 @@ const Antonyms = ({ antonymsData }) => {
     return (
         <div id='antonym-results'>
 
-            Antonyms: {antonymResults.length}
+            <p className='header'>Antonyms: {antonymResults.length}</p>
 
             {
                 antonymResults.length > 1 ? 
