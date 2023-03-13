@@ -9,7 +9,7 @@ function App() {
       
       <Switch>
 
-      <Route path={`/error`}>
+        <Route path={`/error`}>
           <p id='invalid'>No results found. Check your spelling and try again!</p>
         </Route>
 
