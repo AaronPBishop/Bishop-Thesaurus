@@ -57,7 +57,12 @@ const Home = () => {
                     onChange={e => setWord(e.target.value)}>
                     </input>
 
-                    <button type='submit' id='make-search' disabled={errors.length > 0}></button>
+                    <button 
+                    type='submit' 
+                    id='make-search' 
+                    disabled={errors.length > 0}
+                    style={{cursor: 'pointer'}}>
+                    </button>
 
                 </label>
 

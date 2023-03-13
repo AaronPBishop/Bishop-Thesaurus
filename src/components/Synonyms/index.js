@@ -30,20 +30,27 @@ const Synonyms = ({ synonymsData }) => {
     return (
         <div id='synonym-results'>
 
-            <p className='header'>Synonyms: {synonymResults.length}</p>
+            <div
+            style={{
+                display: 'flex',
+                justifyContent: synonymResults.length >= 1 ? 'space-between' : 'center',
+                width: '10vw'
+            }}>
+                <p className='header'>Synonyms: {synonymResults.length}</p>
 
-            {
-                synonymResults.length > 1 ?
-                
-                <button 
-                id='expand-synonyms' 
-                style={{backgroundImage: imgArr[srcIndex]}} 
-                onClick={() => {
-                    setClicked((isClicked) => !isClicked)
-                    setSrcIndex(srcIndex + 1)}}>
-                </button> :
-                showResults   
-            }
+                {
+                    synonymResults.length >= 1 ?
+
+                    <button 
+                    id='expand-synonyms' 
+                    style={{backgroundImage: imgArr[srcIndex], cursor: 'pointer'}} 
+                    onClick={() => {
+                        setClicked((isClicked) => !isClicked)
+                        setSrcIndex(srcIndex + 1)}}>
+                    </button> :
+                    showResults   
+                }
+            </div>
 
             {
                 clicked && 

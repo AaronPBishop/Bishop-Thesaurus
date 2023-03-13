@@ -34,21 +34,27 @@ const Definitions = ({ definitionsData }) => {
 
     return (
         <div id='definition-results'>
+            <div 
+            style={{
+                display: 'flex',
+                justifyContent: definitionResults.length >= 1 ? 'space-between' : 'center',
+                width: '10vw'
+            }}>
+                <p className='header'>Definitions: {definitionResults.length}</p>
 
-            <p className='header'>Definitions: {definitionResults.length}</p>
+                {
+                    definitionResults.length >= 1 ?
 
-            {
-                definitionResults.length > 1 ?
-                
-                 <button 
-                 id='expand-definitions' 
-                 style={{backgroundImage: imgArr[srcIndex]}} 
-                 onClick={() => {
-                     setClicked((isClicked) => !isClicked)
-                     setSrcIndex(srcIndex + 1)}}>
-                 </button> :
-                 showResults
-            }
+                     <button 
+                     id='expand-definitions' 
+                     style={{backgroundImage: imgArr[srcIndex], cursor: 'pointer'}} 
+                     onClick={() => {
+                         setClicked((isClicked) => !isClicked)
+                         setSrcIndex(srcIndex + 1)}}>
+                     </button> :
+                     showResults
+                }
+            </div>
 
             {
                 clicked && 

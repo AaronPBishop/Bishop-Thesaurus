@@ -28,24 +28,39 @@ h1 {
 
 #search-bar {
     font-family: 'Saira', sans-serif;
+
     position: relative;
-    bottom: 15px;
-    border: 1px solid black;
-    border-radius: 3px;
-    margin-right: 3px;
+    bottom: 1vh;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    width: 18vw;
+    height: 4vh;
+
+    box-shadow: 0px 0px 2px 1px rgb(205, 207, 205);
+
+    margin-right: 0.5vw;
+    margin-left: 2.5vw;
+
+    text-align: center;
 }
 
 #make-search {
     background-image: url('../../search_FILL0_wght200_GRAD0_opsz24.png');
     background-color: rgb(212, 226, 249);
     background-position: center;
-    width: 25px;
-    height: 25px;
-    border: 1px solid black;
-    border-radius: 3px;
+
+    width: 2vw;
+    height: 4vh;
+
+    border: none;
+    border-radius: 6px;
+
+    box-shadow: 0px 0px 2px 1px rgb(205, 207, 205);
 
     position: relative;
-    bottom: 9px;
+    top: 0.2vh;
 }
 
 #err-msg {

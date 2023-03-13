@@ -141,14 +141,23 @@ const Anagrams = () => {
             {
                 wordContext.length < 6 ?
                 <div id='anagram-results'>
-                    <p className='header'>Anagrams:</p>
-                    <button 
-                    id='expand-anagrams' 
-                    style={{backgroundImage: imgArr[srcIndex]}} 
-                    onClick={() => {
-                    setClicked((isClicked) => !isClicked)
-                    setSrcIndex(srcIndex + 1)}}>
-                </button>
+                    <div
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        width: '10vw'
+                    }}>
+                        <p className='header'>Anagrams:</p>
+
+                        <button 
+                        id='expand-anagrams' 
+                        style={{backgroundImage: imgArr[srcIndex], cursor: 'pointer'}} 
+                        onClick={() => {
+                            setClicked((isClicked) => !isClicked)
+                            setSrcIndex(srcIndex + 1)
+                        }}>
+                        </button>
+                    </div>
                 </div> :
                 <p id='no-anagrams'>No anagrams to show here!</p>
             }

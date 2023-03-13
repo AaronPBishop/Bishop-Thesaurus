@@ -30,19 +30,26 @@ const Antonyms = ({ antonymsData }) => {
     return (
         <div id='antonym-results'>
 
-            <p className='header'>Antonyms: {antonymResults.length}</p>
+            <div
+            style={{
+                display: 'flex',
+                justifyContent: antonymResults.length >= 1 ? 'space-between' : 'center',
+                width: '10vw'
+            }}>
+                <p className='header'>Antonyms: {antonymResults.length}</p>
 
-            {
-                antonymResults.length > 1 ? 
-                <button 
-                id='expand-antonyms' 
-                style={{backgroundImage: imgArr[srcIndex]}} 
-                onClick={() => {
-                    setClicked((isClicked) => !isClicked)
-                    setSrcIndex(srcIndex + 1)}}>
-                </button> :
-                showResults
-            }
+                {
+                    antonymResults.length >= 1 ? 
+                    <button 
+                    id='expand-antonyms' 
+                    style={{backgroundImage: imgArr[srcIndex], cursor: 'pointer'}} 
+                    onClick={() => {
+                        setClicked((isClicked) => !isClicked)
+                        setSrcIndex(srcIndex + 1)}}>
+                    </button> :
+                    showResults
+                }
+            </div>
 
             {
                 clicked && 
