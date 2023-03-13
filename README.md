@@ -1,6 +1,8 @@
 # Bishop's Thesaurus 
 is an application built with React that parses user input, before sending an asynchronous fetch request to the official web Dictionary API. The resulting JSON data is keyed into and then compiled into a list and rendered in the virtual DOM with components, using React hooks such as context, state, and useEffect.
 
+### Live Link: https://bishop-thesaurus.onrender.com/
+
 *The API can be found here:*
 # https://dictionaryapi.dev/
 
