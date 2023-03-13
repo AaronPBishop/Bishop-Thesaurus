@@ -17,4 +17,4 @@ The user's request will return all relevant definitions, synonyms, and antonyms,
 
 ## _Preview Image_
 
-![image](https://user-images.githubusercontent.com/95946808/202939661-35f3a1a9-7b55-4a9b-9a17-7330467e8054.png)
+![image](https://user-images.githubusercontent.com/95946808/224845911-bdb5e72e-aaee-47a3-a525-34750202317f.png)
